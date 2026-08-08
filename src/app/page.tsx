@@ -479,7 +479,7 @@ export default function HomePage() {
       </nav>
 
       {/* Hero */}
-      <section className="relative min-h-[60vh] sm:min-h-[80vh] flex items-center justify-center overflow-hidden bg-[#0a0a0a] border-b border-gold/10">
+      <section className="relative min-h-[60vh] sm:min-h-[80vh] flex items-center justify-center overflow-hidden bg-background border-b border-gold/10">
         <div className="relative z-10 text-center px-4 sm:px-6 pt-6 sm:pt-8">
           <div className="flex justify-center mb-4 relative">
               <img src="/logo.png" alt="الذوق الرفيع" className="w-64 sm:w-80 md:w-[28rem] lg:w-[40rem] h-auto" />
@@ -999,7 +999,7 @@ export default function HomePage() {
                   <div className="grid grid-cols-2 gap-4">
                     {designTypes.map(t => (
                       <button key={t.key} onClick={() => setDesignType(t.key)}
-                        className={`p-6 rounded-2xl text-center transition-all ${designType === t.key ? 'border-2 border-gold bg-[#0a0a0a]' : 'border-2 border-gold/10 hover:border-gold/30 bg-[#0a0a0a]'}`}>
+                        className={`p-6 rounded-2xl text-center transition-all ${designType === t.key ? 'border-2 border-gold bg-background' : 'border-2 border-gold/10 hover:border-gold/30 bg-background'}`}>
                         <img src={t.icon} alt={t.label} className="w-48 h-48 mx-auto mb-4 rounded-xl object-contain" />
                         <p className="text-gold font-bold text-lg">{t.label}</p>
                       </button>

@@ -3,8 +3,8 @@
 
 @theme inline {
   --color-background: #000000;
-  --color-surface: #0a0a0a;
-  --color-surface-2: #141414;
+  --color-surface: #000000;
+  --color-surface-2: #0a0a0a;
   --color-foreground: #f4ead9;
   --color-gold: #cda15a;
   --color-gold-light: #f4d78b;
