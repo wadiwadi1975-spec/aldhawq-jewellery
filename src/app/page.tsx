@@ -256,6 +256,7 @@ export default function HomePage() {
     bracelet: '/mannequins/hand-wrist.png',
     watch: '/mannequins/hand-side.png',
     anklet: '/mannequins/woman-full.png',
+    handchain: '/mannequins/hand-front.png',
   };
 
   const resetTryOn = () => {
@@ -304,6 +305,12 @@ export default function HomePage() {
     { id: 'w3', name: 'ساعة فاخرة', cat: 'watch', image: '/products/watches-1.png' },
     { id: 'e1', name: 'أقراط لؤلؤ', cat: 'earring', image: '/products/earrings.png' },
     { id: 'a1', name: 'سلسلة كاحل', cat: 'anklet', image: '/products/anklet-1.png' },
+    { id: 'h1', name: 'سلسال يد 1', cat: 'handchain', image: '/products/hand-chain-1.png' },
+    { id: 'h2', name: 'سلسال يد 2', cat: 'handchain', image: '/products/hand-chain-2.png' },
+    { id: 'h3', name: 'سلسال يد 3', cat: 'handchain', image: '/products/hand-chain-3.png' },
+    { id: 'h4', name: 'سلسال يد 4', cat: 'handchain', image: '/products/hand-chain-4.png' },
+    { id: 'h5', name: 'سلسال يد 5', cat: 'handchain', image: '/products/hand-chain-5.png' },
+    { id: 'h6', name: 'سلسال يد 6', cat: 'handchain', image: '/products/hand-chain-6.png' },
   ];
 
   const tryOnZones: Record<string, { top: string; left: string; width: string; label: string }> = {
@@ -313,6 +320,7 @@ export default function HomePage() {
     watch: { top: '50%', left: '60%', width: '18%', label: 'المعصم' },
     earring: { top: '35%', left: '65%', width: '12%', label: 'الأذن' },
     anklet: { top: '85%', left: '40%', width: '18%', label: 'الكاحل' },
+    handchain: { top: '55%', left: '15%', width: '20%', label: 'سلسال يد' },
   };
 
   const showToast = (msg: string) => {
@@ -416,6 +424,7 @@ export default function HomePage() {
               <a href="#earrings2" className="flex flex-col items-center text-foreground/70 hover:text-gold transition-colors"><span className="text-base">أقراط</span><span className="text-base text-gold/70 font-serif">Earrings</span></a>
               <a href="#watches" className="flex flex-col items-center text-foreground/70 hover:text-gold transition-colors"><span className="text-base">ساعات</span><span className="text-base text-gold/70 font-serif">Watches</span></a>
               <a href="#chairs" className="flex flex-col items-center text-foreground/70 hover:text-gold transition-colors"><span className="text-base">كراسي</span><span className="text-base text-gold/70 font-serif">Chairs</span></a>
+              <a href="#handchain" className="flex flex-col items-center text-foreground/70 hover:text-gold transition-colors"><span className="text-base">سلسال يد</span><span className="text-base text-gold/70 font-serif">Hand Chain</span></a>
               <a href="#gift-wrapping" className="flex flex-col items-center text-foreground/70 hover:text-gold transition-colors"><span className="text-base">تغليف</span><span className="text-base text-gold/70 font-serif">Gift</span></a>
               <a href="#try-on" className="flex flex-col items-center text-gold hover:text-gold-light transition-colors font-bold"><span className="text-base">تجربة</span><span className="text-base text-gold/70 font-serif">Try On</span></a>
               <a href="#outfit" className="flex flex-col items-center text-foreground/70 hover:text-gold transition-colors"><span className="text-base">تنسيق</span><span className="text-base text-gold/70 font-serif">Outfit</span></a>
@@ -456,6 +465,7 @@ export default function HomePage() {
             </div>
             <a href="#watches" onClick={() => setMobileMenuOpen(false)} className="block text-foreground/80 hover:text-gold text-sm transition-colors">ساعات <span className="text-gold/40 text-[10px] font-serif">Watches</span></a>
             <a href="#chairs" onClick={() => setMobileMenuOpen(false)} className="block text-foreground/80 hover:text-gold text-sm transition-colors">كراسي <span className="text-gold/40 text-[10px] font-serif">Chairs</span></a>
+            <a href="#handchain" onClick={() => setMobileMenuOpen(false)} className="block text-foreground/80 hover:text-gold text-sm transition-colors">سلسال يد <span className="text-gold/40 text-[10px] font-serif">Hand Chain</span></a>
             <a href="#gift-wrapping" onClick={() => setMobileMenuOpen(false)} className="block text-foreground/80 hover:text-gold text-sm transition-colors">تغليف فاخر <span className="text-gold/40 text-[10px] font-serif">Gift Wrapping</span></a>
             <a href="#rings" onClick={() => setMobileMenuOpen(false)} className="block text-foreground/80 hover:text-gold text-sm transition-colors">خواتم <span className="text-gold/40 text-[10px] font-serif">Rings</span></a>
             <a href="#necklaces" onClick={() => setMobileMenuOpen(false)} className="block text-foreground/80 hover:text-gold text-sm transition-colors">قلائد <span className="text-gold/40 text-[10px] font-serif">Necklaces</span></a>
@@ -1329,6 +1339,37 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Hand Chain */}
+      <section id="handchain" className="py-12 sm:py-20 px-4 sm:px-6 md:px-10">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10 sm:mb-16">
+            <span className="text-gold/60 text-xs tracking-[0.3em] uppercase block mb-3">Hand Chain / سلسال يد</span>
+            <h3 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gradient-gold font-bold">سلسال يد</h3>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {[
+              { id: 701, name: 'سلسال يد 1', nameEn: 'Hand Chain 1', price: '---', image: '/products/hand-chain-1.png' },
+              { id: 702, name: 'سلسال يد 2', nameEn: 'Hand Chain 2', price: '---', image: '/products/hand-chain-2.png' },
+              { id: 703, name: 'سلسال يد 3', nameEn: 'Hand Chain 3', price: '---', image: '/products/hand-chain-3.png' },
+              { id: 704, name: 'سلسال يد 4', nameEn: 'Hand Chain 4', price: '---', image: '/products/hand-chain-4.png' },
+              { id: 705, name: 'سلسال يد 5', nameEn: 'Hand Chain 5', price: '---', image: '/products/hand-chain-5.png' },
+              { id: 706, name: 'سلسال يد 6', nameEn: 'Hand Chain 6', price: '---', image: '/products/hand-chain-6.png' },
+            ].map((item, i) => (
+              <div key={item.id} className="group relative bg-gradient-to-b from-surface-2 to-surface rounded-3xl p-8 border border-gold/10 hover:border-gold/40 transition-all duration-500">
+                <div className="aspect-square overflow-hidden mb-6 flex items-center justify-center bg-background/40 rounded-2xl cursor-pointer relative" onClick={() => setLightbox({ src: item.image, alt: item.name })}>
+                  <img src={item.image} alt={item.name} className={`w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-110 ${i % 2 === 0 ? 'animate-float-slow' : 'animate-float-slow-2'}`} />
+                </div>
+                <h4 className="font-display text-lg text-foreground font-bold mb-1">{item.name}</h4>
+                <p className="text-foreground/40 text-xs mb-3">{item.nameEn}</p>
+                <p className="text-gold font-bold">{item.price} KD</p>
+                <button onClick={(e) => { e.stopPropagation(); setTryOnCategory('handchain'); setTryOnItems(prev => ({ ...prev, handchain: item.image })); resetTryOn(); setTimeout(() => document.getElementById('try-on')?.scrollIntoView({ behavior: 'smooth' }), 100); }} className="mt-3 w-full py-2 rounded-full border border-gold/30 text-gold text-xs hover:bg-gold hover:text-background transition-all font-bold">جربي هذا السلسال</button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* About */}
       <section id="about" className="py-12 sm:py-20 px-4 sm:px-6 md:px-10 bg-surface/30">
         <div className="max-w-6xl mx-auto">
@@ -1387,7 +1428,7 @@ export default function HomePage() {
               <div className="bg-surface-2/50 border border-gold/10 rounded-2xl p-5 sticky top-24">
                 <h4 className="text-gold font-bold text-sm mb-3">قطع المجوهرات</h4>
                 <div className="flex flex-wrap gap-2 mb-3">
-                  {['necklace','ring','bracelet','watch','earring','anklet'].map(cat => (
+                  {['necklace','ring','bracelet','watch','earring','anklet','handchain'].map(cat => (
                     <button key={cat} onClick={() => setTryOnCategory(cat)} className={`px-3 py-1.5 rounded-full text-xs transition-all ${tryOnCategory === cat ? 'bg-gold text-background font-bold' : 'bg-surface border border-gold/10 text-foreground/60 hover:border-gold/30'}`}>
                       {tryOnZones[cat]?.label}
                     </button>
