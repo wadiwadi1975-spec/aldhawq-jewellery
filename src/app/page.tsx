@@ -1183,7 +1183,7 @@ export default function HomePage() {
                       `📱 الوتساب: ${order.whatsapp}\n` +
                       `📅 التاريخ: ${order.date}`
                     );
-                    window.open(`https://wa.me/96598702602?text=${msg}`, '_blank');
+                    window.open(`https://wa.me/96550687763?text=${msg}`, '_blank');
                     setDesignSaved(true);
                     setTimeout(() => setDesignSaved(false), 3000);
                   }}
@@ -1634,7 +1634,7 @@ export default function HomePage() {
             دع فريقنا المتخصص يساعدك في اختيار القطعة المثالية
           </p>
           <a
-            href="https://wa.me/96598702602?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9"
+            href="https://wa.me/96550687763?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D9%85%D8%AC%D8%A7%D9%86%D9%8A%D8%A9"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#20BD5A] transition-all shadow-lg shadow-[#25D366]/20 hover:scale-105"
@@ -1784,7 +1784,7 @@ export default function HomePage() {
           {/* CTA */}
           <div className="text-center mt-10">
             <a
-              href="https://wa.me/96598702602?text=%23خدمة_التغليف_الفاخر"
+              href="https://wa.me/96550687763?text=%23خدمة_التغليف_الفاخر"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-gold text-background px-8 py-4 rounded-full font-bold text-lg hover:bg-gold-light transition-all shadow-lg shadow-gold/20 hover:scale-105"
@@ -1855,23 +1855,23 @@ export default function HomePage() {
               <h5 className="text-gold text-sm font-bold mb-4">موقعنا على الخريطة</h5>
               <div className="rounded-2xl overflow-hidden border border-gold/10 h-[250px]">
                 <iframe
-                  src="https://www.google.com/maps?q=Kayan+jewellery+shop,+سوق+المباركية+محل+رقم+ابراهيم+الريميحي+التجاري,+Abdulla+Al+Salem+St,+Kuwait+City+60000,+Kuwait&ftid=0x3fcf0bfc5f749a85:0xaa919515e19a96ec&output=embed"
+                  src="https://www.google.com/maps?q=سوق+الذهب+الفروانية+الكويت&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="موقع الذوق الرفيع - سوق المباركية"
+                  title="موقع الذوق الرفيع - سوق الذهب الفروانية"
                 />
               </div>
             </div>
             <div>
               <h5 className="text-gold text-sm font-bold mb-4">تواصل معنا</h5>
               <div className="space-y-3 text-foreground/40 text-sm">
-                <p>الكويت - قبلة - سوق المباركية</p>
-                <p>خلف عيد النصار - محل رقم NF6</p>
-                <p dir="ltr">+965 9870 2602</p>
+                <p>الكويت - مدينة الفروانية - سوق الذهب</p>
+                <p>خلف الجمعية</p>
+                <p dir="ltr">+965 50687763</p>
               </div>
               <div className="flex gap-4 mt-4">
                 <a href="https://www.facebook.com/people/Kayanjw/61580264875024/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-surface border border-gold/20 rounded-full flex items-center justify-center text-gold/60 hover:text-gold hover:border-gold/40 transition-all">
