@@ -147,9 +147,9 @@ export default function ModelViewer() {
       mv.setAttribute("rotation-per-second", "30deg");
       mv.setAttribute("shadow-intensity", "0");
       mv.setAttribute("exposure", "1.2");
-      mv.setAttribute("camera-orbit", "45deg 65deg 1.8m");
-      mv.setAttribute("min-camera-orbit", "auto auto 0.8m");
-      mv.setAttribute("max-camera-orbit", "Infinity Infinity 5m");
+      mv.setAttribute("camera-orbit", "45deg 65deg 3m");
+      mv.setAttribute("min-camera-orbit", "auto auto 1m");
+      mv.setAttribute("max-camera-orbit", "Infinity Infinity 8m");
       mv.setAttribute("camera-target", "0m 0m 0m");
       mv.style.width = "100%";
       mv.style.height = "100%";
